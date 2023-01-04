@@ -66,7 +66,7 @@ public class App extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        config.create(url:"http://vod.98nb.com/gzpz/tes.json",type:0).update();
+        config.create(url:"",type:0).update();
         CaocConfig.Builder.create().backgroundMode(CaocConfig.BACKGROUND_MODE_SILENT).errorActivity(CrashActivity.class).apply();
         registerActivityLifecycleCallbacks(new ActivityLifecycleCallbacks() {
             @Override
